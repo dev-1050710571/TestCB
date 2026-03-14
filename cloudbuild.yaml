@@ -24,8 +24,10 @@ steps:
         echo "=== Working Directory ==="
         pwd
         ls -la
-        echo ""
+        echo "new-1"
         echo "=== System Info ==="
         uname -a
         whoami
         id
+options:                                                                                                                                    
+    logging: CLOUD_LOGGING_ONLY
