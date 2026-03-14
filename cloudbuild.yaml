@@ -1,0 +1,31 @@
+steps:
+  - name: 'ubuntu'
+    entrypoint: 'bash'
+    args:
+      - '-c'
+      - |
+        echo "=== Build Context ==="
+        echo "Project ID: $PROJECT_ID"
+        echo "Build ID: $BUILD_ID"
+        echo "Commit SHA: $COMMIT_SHA"
+        echo "Short SHA: $SHORT_SHA"
+        echo "Repo Name: $REPO_NAME"
+        echo "Branch Name: $BRANCH_NAME"
+        echo "Tag Name: $TAG_NAME"
+        echo "Revision ID: $REVISION_ID"
+        echo "Trigger Name: $TRIGGER_NAME"
+        echo "Trigger Build Config Path: $TRIGGER_BUILD_CONFIG_PATH"
+        echo "Service Account: $SERVICE_ACCOUNT_EMAIL"
+        echo "Location: $LOCATION"
+        echo ""
+        echo "=== Environment ==="
+        env | sort
+        echo ""
+        echo "=== Working Directory ==="
+        pwd
+        ls -la
+        echo ""
+        echo "=== System Info ==="
+        uname -a
+        whoami
+        id
