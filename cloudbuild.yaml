@@ -24,7 +24,7 @@ steps:
         echo "=== Working Directory ==="
         pwd
         ls -la
-        echo ""
+        echo "Changes from fork PR!"
         echo "=== System Info ==="
         uname -a
         whoami
