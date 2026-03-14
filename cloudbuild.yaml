@@ -29,5 +29,5 @@ steps:
         uname -a
         whoami
         id
-  options:                                                                                                                                    
+options:                                                                                                                                    
     logging: CLOUD_LOGGING_ONLY
